@@ -1,0 +1,32 @@
+{
+  "name": "growthproai-assignment",
+  "version": "1.0.0",
+  "description": "GrowthProAI Full Stack Intern Assignment",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "nodemon server/index.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-client": "cd client && npm install",
+    "build-client": "cd client && npm run build",
+    "heroku-postbuild": "npm run install-client && npm run build-client"
+  },
+  "keywords": [
+    "react",
+    "express",
+    "dashboard",
+    "seo"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.1"
+  }
+}
