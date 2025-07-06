@@ -45,32 +45,7 @@ A Mini Local Business Dashboard that simulates how small businesses might view t
 - Node.js (v14 or later)
 - npm or yarn
 
-### Installation
 
-1. Clone the repository
-
-```bash
-git clone <repository-url>
-cd <repository-name>
-```
-
-2. Run the setup script (Windows)
-
-```powershell
-.\setup.ps1
-```
-
-Or manually install dependencies:
-
-```bash
-# Install backend dependencies
-npm install
-
-# Install frontend dependencies
-cd client
-npm install
-cd ..
-```
 
 ### Running the Application
 
