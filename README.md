@@ -144,38 +144,3 @@ GET /api/regenerate-headline?name=Cake%20%26%20Co&location=Mumbai
   "headline": "The Ultimate Guide to Cake & Co: Mumbai's 5-Star Experience"
 }
 ```
-
-## Deployment
-
-### Frontend Deployment (Vercel/Netlify)
-
-1. Create a production build of the React app
-
-```bash
-cd client
-npm run build
-```
-
-2. Deploy the `build` folder to Vercel or Netlify
-
-3. Set the environment variable `REACT_APP_API_URL` to point to your deployed backend API
-
-### Backend Deployment (Render/Glitch)
-
-1. Create a new web service on Render or Glitch
-
-2. Connect your GitHub repository
-
-3. Set the following:
-   - Build Command: `npm install && npm run install-client && npm run build-client`
-   - Start Command: `npm start`
-   - Environment Variables: `PORT=5000` and `NODE_ENV=production`
-
-## Evaluation Criteria
-
-| Area | Weight |
-|------|--------|
-| Code quality & structure | 30% |
-| UI/UX design and responsiveness | 20% |
-| API integration & state handling | 25% |
-| Bonus creativity + completeness | 25% |
